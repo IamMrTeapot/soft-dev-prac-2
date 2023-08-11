@@ -1,0 +1,65 @@
+form {
+    margin: 48px auto;
+    width: 80%;
+    padding: 1em;
+    border-radius: 1em;
+    border: 1px solid #CCC;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #fbf3d3;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 1.5em 0;
+    font-size: 24px;
+    font-family: "Raleway", sans-serif;
+    color: #578674;
+}
+
+form div input {
+    width: 50%;
+    height: 1em;
+    border-radius: 0.5em;
+    border: 1px solid #CCC;
+    padding: 0.5em 1em;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    color: #578674;
+}
+
+
+form div select {
+    width: 50%;
+    height: 2em;
+    border-radius: 0.5em;
+    border: 1px solid #CCC;
+    padding: 0.25em 1em;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    color: #578674;
+}
+
+form div input[type="checkbox"] {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form div input[type="submit"] {
+    height: 2em;
+    color: #fbf3d3;
+    background-color: #578674;    
+}

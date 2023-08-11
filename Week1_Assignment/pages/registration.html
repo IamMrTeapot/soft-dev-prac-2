@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/registration.css">
+</head>
+
+<body>
+    <div class="my-header">
+        <div class="header-container">
+            <header>
+                <span class="header-word header-word-1">The</span>
+                <span class="header-word header-word-2">Art</span>
+                <span class="header-word header-word-3">Exhibition</span>
+                <span class="header-word header-word-4">2023</span>
+            </header>
+        </div>
+        <img src="../assets/exhibition.jpg" alt="Exhibition Card" width="50%">
+    </div>
+    <section>
+        <form name="registration-form" id="registration-form">
+            <div>
+                <label for="company">Company name</label>
+                <input type="text" id="company" name="company" placeholder="Your company name">
+            </div>
+            <br>
+            <div>
+                <label for="booth-size">Booth size</label>
+                <select id="booth-size" name="booth-size">
+                    <option value="ten">10 x 10 sq. ft.</option>
+                    <option value="fifteen">10 x 15 sq. ft.</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="need-table">Table is needed</label>
+                <input type="checkbox" id="need-table" name="need-table" checked>
+            </div>
+            <br>
+            <div>
+                <label for="chair-amount">Number of chairs</label>
+                <input type="number" id="chair-amount" name="chair-amount" placeholder="1">
+            </div>
+            <br>
+            <div>
+                <label for="contact-name">Contact name</label>
+                <input type="text" id="contact-name" name="contact-name" placeholder="Your name">
+            </div>
+            <br>
+            <div>
+                <label for="contact-info">Tel. </label>
+                <input type="tel" id="contact-info" name="contact-info" placeholder="Phone number">
+            </div>
+            <br>
+            <div class="submit-button">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
