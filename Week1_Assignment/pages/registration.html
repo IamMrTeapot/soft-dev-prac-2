@@ -5,6 +5,7 @@
     <title>Registration</title>
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/registration.css">
+    <script src="../scripts/register.js"></script>
 </head>
 
 <body>
@@ -23,12 +24,13 @@
         <form name="registration-form" id="registration-form">
             <div>
                 <label for="company">Company name</label>
-                <input type="text" id="company" name="company" placeholder="Your company name">
+                <input type="text" id="company" name="company" placeholder="Your company name" required>
             </div>
             <br>
             <div>
                 <label for="booth-size">Booth size</label>
-                <select id="booth-size" name="booth-size">
+                <select id="booth-size" name="booth-size" required>
+                    <option disabled selected value> -- select an option -- </option>
                     <option value="ten">10 x 10 sq. ft.</option>
                     <option value="fifteen">10 x 15 sq. ft.</option>
                 </select>
@@ -46,16 +48,16 @@
             <br>
             <div>
                 <label for="contact-name">Contact name</label>
-                <input type="text" id="contact-name" name="contact-name" placeholder="Your name">
+                <input type="text" id="contact-name" name="contact-name" placeholder="Your name" required>
             </div>
             <br>
             <div>
                 <label for="contact-info">Tel. </label>
-                <input type="tel" id="contact-info" name="contact-info" placeholder="Phone number">
+                <input type="tel" id="contact-info" name="contact-info" placeholder="Phone number" required>
             </div>
             <br>
             <div class="submit-button">
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" onclick="validateAll()">
             </div>
         </form>
     </section>
